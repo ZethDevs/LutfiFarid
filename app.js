@@ -48,11 +48,11 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'Belum mas',
+        url: 'https://lutfifarid-api.up.railway.app:8080',
         description: 'Production server'
       },
       {
-        url: 'http://localhost:5000',
+        url: 'https://lutfifarid-api.up.railway.app',
         description: 'Local development server'
       }
     ],
