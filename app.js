@@ -12,7 +12,6 @@ const TeraBoxDL = require('./features/teraboxDownloader.js');
 const TikDown = require('./features/tikdd.js');
 
 const app = express();
-app.set('view engine', 'ejs');
 app.use(express.json());
 
 // Middleware untuk memeriksa API key
@@ -24,12 +23,12 @@ const checkApiKey = (req, res, next) => {
   next();
 };
 
+// Serve static files from the 'public' directory
+app.use(express.static('views'));
+
+// Route to serve the index.html file
 app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'ZethDevs - APIs',
-    heading: 'Welcome to ZethDevs APIs',
-    content: 'This is a simple template using EJS.'
-  });
+  res.sendFile(__dirname + '/views/index.html');
 });
 
 // Swagger configuration
