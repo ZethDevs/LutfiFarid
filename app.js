@@ -42,17 +42,17 @@ const swaggerOptions = {
       description: 'Free Rest API for everyone without limit.\n\nThis project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.',
       contact: {
         name: 'ZethDevs',
-        url: 'https://zethdevs.xyz',
+        url: 'http://lutfifarid-api.up.railway.app',
         email: 'lutfi.faridd@gmail.com'
       },
     },
     servers: [
       {
-        url: 'https://lutfifarid-api.up.railway.app:8080',
+        url: 'http://lutfifarid-api.up.railway.app',
         description: 'Production server'
       },
       {
-        url: 'https://lutfifarid-api.up.railway.app',
+        url: 'http://localhost:5000',
         description: 'Local development server'
       }
     ],
